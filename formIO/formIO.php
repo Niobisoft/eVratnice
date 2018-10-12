@@ -12,12 +12,17 @@ function formInit($action, $method, $optional) {
 }
 
 function formSelect ($type, $name, $text, $optional) {
-echo "čas";
   if ($type = "select") {
     echo "<select name=\"".$name."\" ".$optional.">";
 
   }
+  if ($type = "option") {
+    echo "<option value=\"".$name."\" ".$optional.">".$text;
+    formCloser("option");
+  }
 }
 
-
+function formCloser ($name) {
+    echo "</".$name.">";
+}
 ?>
