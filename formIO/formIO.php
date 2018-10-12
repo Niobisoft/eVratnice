@@ -12,16 +12,7 @@ function formInit($action, $method, $optional) {
 }
 
 function formSelect ($type, $name, $text, $optional) {
-    if ($type = "select") {
-      echo "<select name=\"".$name."\" ".$optional.">";
-    }
-    if ($type = "option") {
-      echo "<option value=\"".$name."\" ".$optional.">".$text;
-      closer("option");
-    }
-    if ($type = "datalist") {
-      echo "<datalist id=\"".$name."\">"
-    }
+
 }
 
 
