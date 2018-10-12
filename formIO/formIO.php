@@ -24,7 +24,10 @@ function formSelect ($type, $name, $text, $optional) {
     echo "<datalist id=\"".$name."\">";
   }
 }
-
+function formTextarea  ($name, $text, $optional) {
+  echo "<textarea name=\"".$name."\" ".$optional.">".$text;
+  formCloser("textarea");
+}
 
 
 
