@@ -21,7 +21,7 @@ function formSelect ($type, $name, $text, $optional) {
     formCloser("option");
   }
   if ($type = "datalist") {
-    echo "<datalist id=\"".$name."\">"
+    echo "<datalist id=\"".$name."\">";
   }
 }
 
