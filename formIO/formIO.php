@@ -20,8 +20,35 @@ function formSelect ($type, $name, $text, $optional) {
     echo "<option value=\"".$name."\" ".$optional.">".$text;
     formCloser("option");
   }
+  if ($type = "datalist") {
+    echo "<datalist id=\"".$name."\">"
+  }
+}
+function formTextarea  ($name, $text, $optional) {
+  echo "<textarea name=\"".$name."\" ".$optional.">".$text;
+  formCloser("textarea");
+}
+function formButton ($type, $form, $value, $text, $optional) {
+  echo "<button type=\"".$type."\" form=\""$form"\" value=\".$value.\" ".$optional.">".$text;
+  formCloser("button");
 }
 
+
+
+//
+// nezapomenout na input list="" (formSelect.datalist) identifikator name
+//
+
+//function formInput ($type, $name, ) {
+//
+//}
+
+//
+// Support fcs
+//
+function formStarter ($name) {
+    echo "<".$name.">";
+}
 function formCloser ($name) {
     echo "</".$name.">";
 }
