@@ -1,14 +1,11 @@
 <?php
 // Všechny prvky počítají s style parametrem v $optional
-
-
-
-function formInit('action', 'method', 'optional') {
 // Založení formu
 // další možnosti optional:
 // target="_blank", "_parent", "_top"
 // autocomplete="on", "off"
 // novalidate (parametr bez obsahu)
+function formInit('action', 'method', 'optional') {
   echo "<form method=\"".$method."\" action=\"".$action."\" ".$optional.">";
 }
 function formSelect ('type', 'name', 'text', 'optional') {
