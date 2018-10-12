@@ -1,4 +1,5 @@
 <?php
+echo "ahoj";
 // Všechny prvky počítají s style parametrem v $optional
 // Založení formu
 // další možnosti optional:
