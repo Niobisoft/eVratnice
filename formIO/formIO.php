@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 echo "<!-- ahoj -->";
 // Všechny prvky počítají s style parametrem v $optional=""
-// Založení formu
+// Založení formu a
 // další možnosti optional:
 // target="_blank", "_parent", "_top"
 // autocomplete="on", "off"
