@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL);
-echo "<!-- ahoj -->";
+echo "<!-- ahoj --->";
 // Všechny prvky počítají s style parametrem v $optional=""
 // Založení formu a
 // další možnosti optional:
