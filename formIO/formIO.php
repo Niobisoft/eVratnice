@@ -12,8 +12,10 @@ function formInit($action, $method, $optional) {
 }
 
 function formSelect ($type, $name, $text, $optional) {
+echo "čas";
   if ($type = "select") {
     echo "<select name=\"".$name."\" ".$optional.">";
+
   }
 }
 
