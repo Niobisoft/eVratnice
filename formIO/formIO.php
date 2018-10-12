@@ -8,7 +8,7 @@ echo "<!-- ahoj -->";
 // autocomplete="on", "off"
 // novalidate (parametr bez obsahu)
 //
-function formInit($action, $method, $optional=""="") {
+function formInit($action, $method, $optional="") {
   echo "<form method=\"".$method."\" action=\"".$action."\" ".$optional.">";
 }
 
