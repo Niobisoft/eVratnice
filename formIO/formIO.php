@@ -20,7 +20,7 @@ function formSelect ($type, $name, $text, $optional) {
       echo "<select name=\"".$name."\" ".$optional.">";
     }
     if ($type == "option") {
-      echo "<option value=\"".$name."\" ".$optional.">".$text
+      echo "<option value=\"".$name."\" ".$optional.">".$text;
       closer("option");
     }
     if ($type == "datalist") {
@@ -32,7 +32,7 @@ function formTextarea  ($name, $text, $optional) {
   closer("textarea");
 }
 function formButton ($type, $form, $value, $text, $optional) {
-  echo "<button type=\"".$type."\" form=\""$form"\" value=\".$value.\" ".$optional.">".$text
+  echo "<button type=\"".$type."\" form=\""$form"\" value=\".$value.\" ".$optional.">".$text;
   closer("button");
 }
 
