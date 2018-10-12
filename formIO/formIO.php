@@ -11,17 +11,6 @@ function formInit('action', 'method', 'optional') {
 // novalidate (parametr bez obsahu)
   echo "<form method=\"".$method."\" action=\"".$action."\" ".$optional.">";
 }
-
-function formFieldSet('action', 'legend') {
-// Fieldset
-    if ($action == "activate") {
-      echo "<fieldset>";
-    }
-    if ($action == "legend") {
-      echo "<legend>".$legend;
-      closer("legend");
-    }
-}
 function formSelect ('type', 'name', 'text', 'optional') {
     if ($type == "select") {
       echo "<select name=\"".$name."\" ".$optional.">";
@@ -56,8 +45,12 @@ function formInput ('type', 'name', '') {
 //
 // Support fcs
 //
+function formStarter ($name) {
+    echo "<".$name.">";
+}
 
-function closer ($name) {
+function formCloser ($name) {
     echo "</".$name.">";
 }
+
 ?>
