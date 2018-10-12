@@ -1,16 +1,24 @@
 <?php
+// Všechny prvky počítají s style parametrem v $optional
+
+
+
 function formInit('action', 'method', 'optional') {
+// Založení formu
+// další možnosti optional:
+// target="_blank", "_parent", "_top"
+// autocomplete="on", "off"
+// novalidate (parametr bez obsahu)
   echo "<form method=\"".$method."\" action=\"".$action."\" ".$optional.">";
 }
+
 function formFieldSet('action', 'legend') {
+// Fieldset
     if ($action == "activate") {
       echo "<fieldset>";
     }
-    if ($action == "deactivate") {
-      echo "</fieldset>";
-    }
     if ($action == "legend") {
-      echo "<legend>".$legend
+      echo "<legend>".$legend;
       closer("legend");
     }
 }
@@ -38,7 +46,7 @@ function formButton ('type', 'form', 'value', 'text', 'optional') {
 
 
 //
-// nezapomenout na list (formSelect.datalist) identifikator name
+// nezapomenout na input list="" (formSelect.datalist) identifikator name
 //
 
 function formInput ('type', 'name', '') {
