@@ -1,18 +1,18 @@
 <?php
 error_reporting(E_ALL);
 echo "ahoj";
-// Všechny prvky počítají s style parametrem v $optional
+// Všechny prvky počítají s style parametrem v $optional=""
 // Založení formu
 // další možnosti optional:
 // target="_blank", "_parent", "_top"
 // autocomplete="on", "off"
 // novalidate (parametr bez obsahu)
-// 
-function formInit($action, $method, $optional) {
+//
+function formInit($action, $method, $optional=""="") {
   echo "<form method=\"".$method."\" action=\"".$action."\" ".$optional.">";
 }
 
-function formSelect ($type, $name, $text, $optional) {
+function formSelect ($type, $name, $text, $optional="") {
   if ($type = "select") {
     echo "<select name=\"".$name."\" ".$optional.">";
 
@@ -25,11 +25,11 @@ function formSelect ($type, $name, $text, $optional) {
     echo "<datalist id=\"".$name."\">";
   }
 }
-function formTextarea  ($name, $text, $optional) {
+function formTextarea  ($name, $text, $optional="") {
   echo "<textarea name=\"".$name."\" ".$optional.">".$text;
   formCloser("textarea");
 }
-function formButton ($type, $form, $value, $text, $optional) {
+function formButton ($type, $form, $value, $text, $optional="") {
   echo "<button type=\"".$type."\" form=\"".$form."\" value=\".$value.\" ".$optional.">".$text;
   formCloser("button");
 }
